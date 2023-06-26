@@ -71,9 +71,7 @@ Este script acessa o site "https://www.facebook.com/" e realiza o cadastro preen
 - Data de nascimento: 13 de janeiro de 2013
 
 ## Observações
-- Certifique-se de ter uma conexão com a internet para que os scripts possam acessar os sites
-
-.
+- Certifique-se de ter uma conexão com a internet para que os scripts possam acessar os sites.
 - Verifique se os locators (IDs, classes, etc.) dos elementos do formulário estão atualizados nos scripts. Caso contrário, os testes podem falhar.
 - Os scripts foram desenvolvidos com base nas informações fornecidas e podem precisar de ajustes dependendo das atualizações dos sites e das bibliotecas utilizadas.
 - Caso ocorra algum problema durante a execução dos scripts, verifique as configurações do ambiente e certifique-se de seguir corretamente as instruções de execução.
