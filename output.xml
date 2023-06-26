@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230626 11:16:37.873" rpa="false" schemaversion="4">
+<suite id="s1" name="Archive" source="D:\Usuário\Documents\GitHub\Robot\Archive.robot">
+<test id="s1-t1" name="Preencher Formulário" line="24">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230626 11:16:38.041" level="INFO">Opening browser 'Chrome' to base url 'https://itera-qa.azurewebsites.net/home/automation'.</msg>
+<status status="PASS" starttime="20230626 11:16:38.040" endtime="20230626 11:16:40.644"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=name</arg>
+<arg>${NOME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230626 11:16:40.646" level="INFO">Typing text 'Arya Stark' into text field 'id=name'.</msg>
+<status status="PASS" starttime="20230626 11:16:40.645" endtime="20230626 11:16:40.746"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=phone</arg>
+<arg>${TELEFONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230626 11:16:40.746" level="INFO">Typing text '555-1234' into text field 'id=phone'.</msg>
+<status status="PASS" starttime="20230626 11:16:40.746" endtime="20230626 11:16:40.840"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230626 11:16:40.841" level="INFO">Typing text 'arya.stark@winterfell.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20230626 11:16:40.841" endtime="20230626 11:16:40.924"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230626 11:16:40.924" level="INFO">Typing text '123456' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230626 11:16:40.924" endtime="20230626 11:16:40.996"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=address</arg>
+<arg>${ENDERECO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230626 11:16:40.997" level="INFO">Typing text 'Rua Winterfell 13 B em robot' into text field 'id=address'.</msg>
+<status status="PASS" starttime="20230626 11:16:40.996" endtime="20230626 11:16:41.077"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20230626 11:16:41.078" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20230626 11:16:41.078" endtime="20230626 11:16:41.282"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230626 11:16:41.284" endtime="20230626 11:16:43.405"/>
+</kw>
+<status status="PASS" starttime="20230626 11:16:38.039" endtime="20230626 11:16:43.407"/>
+</test>
+<test id="s1-t2" name="Preencher Formulário2" line="33">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE_URL2}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230626 11:16:43.415" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/automation-practice-form'.</msg>
+<status status="PASS" starttime="20230626 11:16:43.413" endtime="20230626 11:16:55.653"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=firstName</arg>
+<arg>${NOME2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230626 11:16:55.655" level="INFO">Typing text 'Arya' into text field 'id=firstName'.</msg>
+<status status="PASS" starttime="20230626 11:16:55.654" endtime="20230626 11:16:55.757"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=lastName</arg>
+<arg>${SOBRENOME2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230626 11:16:55.758" level="INFO">Typing text 'Stark' into text field 'id=lastName'.</msg>
+<status status="PASS" starttime="20230626 11:16:55.757" endtime="20230626 11:16:55.843"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=userEmail</arg>
+<arg>${EMAIL2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230626 11:16:55.844" level="INFO">Typing text 'arya.stark@winterfell.com' into text field 'id=userEmail'.</msg>
+<status status="PASS" starttime="20230626 11:16:55.843" endtime="20230626 11:16:55.946"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=userNumber</arg>
+<arg>${TELEFONE2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230626 11:16:55.947" level="INFO">Typing text '555-1234' into text field 'id=userNumber'.</msg>
+<status status="PASS" starttime="20230626 11:16:55.946" endtime="20230626 11:16:56.082"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230626 11:16:56.082" endtime="20230626 11:16:58.196"/>
+</kw>
+<status status="PASS" starttime="20230626 11:16:43.411" endtime="20230626 11:16:58.197"/>
+</test>
+<test id="s1-t3" name="Marcar Campos do Formulário" line="40">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE_URL3}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230626 11:16:58.201" level="INFO">Opening browser 'Chrome' to base url 'https://itera-qa.azurewebsites.net/home/automation'.</msg>
+<status status="PASS" starttime="20230626 11:16:58.200" endtime="20230626 11:17:01.226"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>optionsRadios</arg>
+<arg>option1</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230626 11:17:01.226" level="INFO">Selecting 'option1' from radio button 'optionsRadios'.</msg>
+<status status="PASS" starttime="20230626 11:17:01.226" endtime="20230626 11:17:01.298"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id=monday</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230626 11:17:01.299" level="INFO">Selecting checkbox 'id=monday'.</msg>
+<status status="PASS" starttime="20230626 11:17:01.298" endtime="20230626 11:17:01.362"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id=friday</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230626 11:17:01.362" level="INFO">Selecting checkbox 'id=friday'.</msg>
+<status status="PASS" starttime="20230626 11:17:01.362" endtime="20230626 11:17:01.425"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id=sunday</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230626 11:17:01.425" level="INFO">Selecting checkbox 'id=sunday'.</msg>
+<status status="PASS" starttime="20230626 11:17:01.425" endtime="20230626 11:17:01.481"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230626 11:17:01.481" endtime="20230626 11:17:03.570"/>
+</kw>
+<status status="PASS" starttime="20230626 11:16:58.199" endtime="20230626 11:17:03.570"/>
+</test>
+<test id="s1-t4" name="Cadastro no Facebook" line="47">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE_URL4}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230626 11:17:03.573" level="INFO">Opening browser 'Chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20230626 11:17:03.573" endtime="20230626 11:17:05.683"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Criar nova conta</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230626 11:17:05.684" level="INFO">Clicking element 'link=Criar nova conta'.</msg>
+<status status="PASS" starttime="20230626 11:17:05.684" endtime="20230626 11:17:05.751"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230626 11:17:07.753" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230626 11:17:05.751" endtime="20230626 11:17:07.753"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=firstname</arg>
+<arg>Arya</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230626 11:17:07.756" level="INFO">Typing text 'Arya' into text field 'name=firstname'.</msg>
+<status status="PASS" starttime="20230626 11:17:07.754" endtime="20230626 11:17:07.845"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=lastname</arg>
+<arg>Stark</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230626 11:17:07.845" level="INFO">Typing text 'Stark' into text field 'name=lastname'.</msg>
+<status status="PASS" starttime="20230626 11:17:07.845" endtime="20230626 11:17:07.930"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=reg_email__</arg>
+<arg>arya@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230626 11:17:07.931" level="INFO">Typing text 'arya@gmail.com' into text field 'name=reg_email__'.</msg>
+<status status="PASS" starttime="20230626 11:17:07.931" endtime="20230626 11:17:08.027"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=password_step_input</arg>
+<arg>@gggadssd12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230626 11:17:08.028" level="INFO">Typing text '@gggadssd12345' into text field 'id=password_step_input'.</msg>
+<status status="PASS" starttime="20230626 11:17:08.028" endtime="20230626 11:17:08.112"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id=day</arg>
+<arg>13</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230626 11:17:08.113" level="INFO">Selecting options from selection list 'id=day' by value 13.</msg>
+<status status="PASS" starttime="20230626 11:17:08.113" endtime="20230626 11:17:08.196"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id=month</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230626 11:17:08.197" level="INFO">Selecting options from selection list 'id=month' by value 1.</msg>
+<status status="PASS" starttime="20230626 11:17:08.197" endtime="20230626 11:17:08.271"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id=year</arg>
+<arg>2013</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230626 11:17:08.273" level="INFO">Selecting options from selection list 'id=year' by value 2013.</msg>
+<status status="PASS" starttime="20230626 11:17:08.272" endtime="20230626 11:17:08.349"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>name=websubmit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230626 11:17:08.349" level="INFO">Clicking button 'name=websubmit'.</msg>
+<status status="PASS" starttime="20230626 11:17:08.349" endtime="20230626 11:17:08.437"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230626 11:17:08.437" endtime="20230626 11:17:10.537"/>
+</kw>
+<status status="PASS" starttime="20230626 11:17:03.571" endtime="20230626 11:17:10.538"/>
+</test>
+<status status="PASS" starttime="20230626 11:16:37.875" endtime="20230626 11:17:10.543"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Archive">Archive</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

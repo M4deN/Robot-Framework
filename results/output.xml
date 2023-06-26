@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.0 on win32)" generated="20230626 09:33:56.130" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot" source="D:\Usuário\Documents\GitHub\Robot">
+<suite id="s1-s1" name="Archive" source="D:\Usuário\Documents\GitHub\Robot\Archive.robot">
+<test id="s1-s1-t1" name="Canário 1: Teste open Browser" line="15">
+<status status="FAIL" starttime="20230626 09:33:56.174" endtime="20230626 09:33:56.175">Test cannot be empty.</status>
+</test>
+<status status="FAIL" starttime="20230626 09:33:56.164" endtime="20230626 09:33:56.178"/>
+</suite>
+<status status="FAIL" starttime="20230626 09:33:56.135" endtime="20230626 09:33:56.181"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robot">Robot</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Archive">Robot.Archive</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230626 09:33:56.118" level="ERROR">Error in file 'D:\Usuário\Documents\GitHub\Robot\Archive.robot' on line 11: Unrecognized section header '*** Keywordss ***'. Valid sections: 'Settings', 'Variables', 'Test Cases', 'Tasks', 'Keywords' and 'Comments'.</msg>
+<msg timestamp="20230626 09:33:56.168" level="ERROR">Error in file 'D:\Usuário\Documents\GitHub\Robot\Archive.robot' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  D:\Usuário\Documents\GitHub\Robot\lib
+  D:\Usuário\Documents\GitHub\Robot\resources
+  c:\Users\Usuário\.vscode\extensions\d-biehl.robotcode-0.45.0\bundled\libs
+  c:\Users\Usuário\.vscode\extensions\d-biehl.robotcode-0.45.0\bundled\tool\robotcode
+  C:\Python311\python311.zip
+  C:\Python311\Lib
+  C:\Python311\DLLs
+  C:\Python311
+  C:\Python311\Lib\site-packages</msg>
+</errors>
+</robot>
