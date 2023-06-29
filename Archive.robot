@@ -19,6 +19,11 @@ ${TELEFONE2}       555-1234
 ${SITE_URL3}       https://itera-qa.azurewebsites.net/home/automation
 ${SITE_URL4}       https://www.facebook.com/
 ${DELAY}           2
+########################################################################
+${SITE_URL5}       https://www.mercadolivre.com.br/
+########################################################################
+${SITE_URL6}       https://itera-qa.azurewebsites.net/home/automation
+
 
 *** Test Cases ***
 Preencher Formulário
@@ -57,3 +62,9 @@ Cadastro no Facebook
     Select From List by Value    id=year    2013
     Click Button                 name=websubmit
     Close Browser 
+Verificar Pagina Ofertas do Dia
+    Open Browser  ${SITE_URL5}  ${BROWSER}
+    Click Element                xpath=/html/body/header/div/div[5]/div/ul/li[2]/a
+    ${element_text}    Get Text    css=h1.header_title
+    Should Be Equal    ${element_text}    Ofertas do dia
+    Close Browser
